@@ -3,6 +3,7 @@ import { useHistory } from "react-router-dom";
 import styled from "styled-components";
 import PokemonCard from "../components/PokemonCard"
 import Header from "../components/Header"
+import {goToHome} from "../routes/Coordinator"
 
 const Pokedex = () => {
     
@@ -19,7 +20,10 @@ const Pokedex = () => {
     
     return(
         <div>
-            <Header></Header>
+            <Header
+                pageName={"Pokédex"}
+                buttonFunction={() => goToHome(history)}
+            />
             
             <PokeContainer>
                 <PokemonCard/>
@@ -27,25 +31,6 @@ const Pokedex = () => {
                 <PokemonCard/>
                 <PokemonCard/>
                 <PokemonCard/>
-
-                <PokemonCard/>
-                <PokemonCard/>
-                <PokemonCard/>
-                <PokemonCard/>
-                <PokemonCard/>
-
-                <PokemonCard/>
-                <PokemonCard/>
-                <PokemonCard/>
-                <PokemonCard/>
-                <PokemonCard/>
-
-                <PokemonCard/>
-                <PokemonCard/>
-                <PokemonCard/>
-                <PokemonCard/>
-                <PokemonCard/>
-                
 
             </PokeContainer>
         </div>

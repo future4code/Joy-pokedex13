@@ -2,6 +2,8 @@ import React from "react";
 import Header from "../components/Header"
 import { useHistory } from "react-router-dom";
 import styled from "styled-components";
+import PokemonCard from "../components/PokemonCard"
+import {goToPokedex} from "../routes/Coordinator"
 
 const Home = () => {
 
@@ -10,18 +12,32 @@ const Home = () => {
 
     //Estilização
     const PokeContainer = styled.main`
-        width: 100vw;
-        height: 92vh;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        display: grid;
+        grid-template-columns: 200px 200px 200px 200px 200px;
+        column-gap: 60px;
+        margin-left: 110px;
     `
 
     return(
         <div>
-            <Header></Header>
+            <Header
+                pageName={"Lista de Pokémons"}
+                buttonFunction={() => goToPokedex(history)}
+            />
             
             <PokeContainer>
+
+                <PokemonCard></PokemonCard>
+                <PokemonCard></PokemonCard>
+                <PokemonCard></PokemonCard>
+                <PokemonCard></PokemonCard>
+                <PokemonCard></PokemonCard>
+                
+                <PokemonCard></PokemonCard>
+                <PokemonCard></PokemonCard>
+                <PokemonCard></PokemonCard>
+                <PokemonCard></PokemonCard>
+                <PokemonCard></PokemonCard>
 
             </PokeContainer>
         </div>
