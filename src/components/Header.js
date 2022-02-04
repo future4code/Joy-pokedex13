@@ -1,11 +1,7 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
 import styled from "styled-components";
 
-const Header = () => {
-
-    //Variável que acessa as propriedades do history
-    const history = useHistory()
+const Header = ({buttonFunction, pageName}) => {
 
     //Estilização
     const Header = styled.header`
@@ -13,9 +9,13 @@ const Header = () => {
         background-color: #f25058;
         display: flex;
         align-items: center;
-        justify-content: space-between;
         color: white;
         position: relative;
+
+        h1 {
+          margin-left: 34vw;
+          
+        }
     `
     
     const Button = styled.button`
@@ -31,16 +31,23 @@ const Header = () => {
             cursor: pointer;
         }
     `
+    const ButtonText = () => {
+      switch (pageName) {
+        case "Lista de Pokémons":
+          return "Pokédex";
+        case "Pokédex":
+          return "Lista de pokémons";
+        default:
+          return "Voltar";
+      }
+    };
   
     return (
       <Header>
-        <Button>
-          botão esquerda
+        <Button onClick={buttonFunction}>
+          {ButtonText()}
         </Button>
-        <h1>Titúlo da Página</h1>
-        <Button>
-          botão direito
-        </Button>
+        <h1>{pageName}</h1>
       </Header>
     )
   }

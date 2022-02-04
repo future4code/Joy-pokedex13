@@ -13,15 +13,34 @@ const PokemonCard = () => {
         width: 220px;
         height: 210px;
         border-radius: 4px;
-        background-color: #97b6e8;
-        -webkit-box-shadow: -6px 8px 8px 0px rgba(25, 105, 78, 0.75);
-        -moz-box-shadow: -6px 8px 8px 0px rgba(25, 105, 78, 0.75);
-        box-shadow: -6px 8px 8px 0px rgba(25, 105, 78, 0.75);
+        background-color: #aad9f0;
+        -webkit-box-shadow: -6px 8px 8px 0px rgba(126, 170, 191, 0.75);
+        -moz-box-shadow: -6px 8px 8px 0px rgba(126, 170, 191, 0.75);
+        box-shadow: -6px 8px 8px 0px rgba(126, 170, 191, 0.75);
     `
 
     const ButtonContainer = styled.div`
         display: flex;
-        justify-content: space-between;
+        margin-top:18vh;
+
+        button {
+            background-color: #f25058;
+            border-radius: 20px;
+
+            color: white;
+
+            &:hover{
+                background-color: #8a4e55;
+                cursor: pointer;
+            }
+        }
+        .b1{
+            width: 50%;
+        }
+
+        .b2{
+            width: 50%;
+        }
     `
     
     
@@ -31,8 +50,8 @@ const PokemonCard = () => {
                 <img src="" alt="imagem do poke" />
             </figure>
             <ButtonContainer>
-            <button>Adicionar a Pokédex</button>
-            <button>Ver Detalhes</button>
+            <button className="b1">Adicionar a Pokédex</button>
+            <button className="b2">Ver Detalhes</button>
             </ButtonContainer>
 
         </Card>
