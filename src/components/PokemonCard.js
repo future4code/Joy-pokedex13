@@ -1,6 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import styled from "styled-components";
+import {goToPokeDetail} from "../routes/Coordinator"
 
 const PokemonCard = () => {
     
@@ -51,7 +52,7 @@ const PokemonCard = () => {
             </figure>
             <ButtonContainer>
             <button className="b1">Adicionar a Pokédex</button>
-            <button className="b2">Ver Detalhes</button>
+            <button onClick={() => goToPokeDetail(history)} className="b2">Ver Detalhes</button>
             </ButtonContainer>
 
         </Card>
