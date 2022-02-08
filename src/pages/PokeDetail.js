@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Header from "../components/Header"
 import {goToPokedex} from "../routes/Coordinator"
 
-const PokeDetail = () => {
+const PokeDetail = (props) => {
     
     //Variável que acessa as propriedades do history
     const history = useHistory()
