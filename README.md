@@ -11,4 +11,6 @@ O que funciona:
 - Remover os pokémons da pokédex.
 - Tela de detalhe do pokémon.
 
+ps: não sei o que rolou mas o site deu uma quebrada quando upei pro surge :(
+
 ![imagem pokebola](https://cdn-icons-png.flaticon.com/512/188/188993.png)
