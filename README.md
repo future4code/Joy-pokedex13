@@ -2,15 +2,13 @@
 
 Nome dos integrantes: 
 - Danielle Kensy
-- Eli Tosta Junior
-- Pedro Sekine
 
-Link do Surge: www.link.com.br
+Link do Surge: https://repulsive-adjustment.surge.sh/
 
 O que funciona:
-- Item 1
-- Item 2
+- Lista com 20 pokémons sendo renderizada na tela.
+- Adicionar os pokemóns na pokédex.
+- Remover os pokémons da pokédex.
+- Tela de detalhe do pokémon.
 
-O que não funciona: 
-- Item 3
-- Item 4
+![imagem pokebola](https://cdn-icons-png.flaticon.com/512/188/188993.png)

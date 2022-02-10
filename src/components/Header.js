@@ -1,20 +1,27 @@
 import React from "react";
 import styled from "styled-components";
+import bg from "../img/pokebola.png";
 
 const Header = ({buttonFunction, pageName}) => {
 
     //Estilização
     const Header = styled.header`
-        height: 10vh;
-        background-color: #f25058;
+        height: 15vh;
+        background-color: #fc778f;
         display: flex;
         align-items: center;
         color: white;
         position: relative;
 
         h1 {
-          margin-left: 34vw;
+          margin-left: 38vw;
           
+        }
+
+        img {
+          margin-left: 40vw;
+          height: 10vh;
+          width: 5vw;
         }
     `
     
@@ -33,10 +40,10 @@ const Header = ({buttonFunction, pageName}) => {
     `
     const ButtonText = () => {
       switch (pageName) {
-        case "Lista de Pokémons":
+        case "PokeLista":
           return "Pokédex";
         case "Pokédex":
-          return "Lista de pokémons";
+          return "PokeLista";
         default:
           return "Voltar";
       }
@@ -48,6 +55,7 @@ const Header = ({buttonFunction, pageName}) => {
           {ButtonText()}
         </Button>
         <h1>{pageName}</h1>
+        <img src={bg} alt="" />
       </Header>
     )
   }
