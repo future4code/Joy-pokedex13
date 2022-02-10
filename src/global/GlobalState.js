@@ -45,7 +45,7 @@ const GlobalState = (props) => {
             .get(`${BASE_URL}/pokemon/${poke.name}`)
             .then((res) => {
                 List.push(res.data)
-                setPokemons(List)
+                List.length === 20 && setPokemons(List)
               }
             )
             .catch((error) => alert(error.message))

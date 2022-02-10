@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext} from "react";
 import Header from "../components/Header"
 import { useHistory } from "react-router-dom";
 import styled from "styled-components";
@@ -27,7 +27,7 @@ const Home = () => {
     return(
         <div>
             <Header
-                pageName={"Lista de Pokémons"}
+                pageName={"PokeLista"}
                 buttonFunction={() => goToPokedex(history)}
             />
             
